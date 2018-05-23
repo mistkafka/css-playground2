@@ -1,0 +1,26 @@
+
+$page-route-width: 150px;
+
+.page-route {
+    .page-route__nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: $page-route-width;
+
+        border-right: 1px solid black;
+    }
+
+    .page-route__nav--fold {
+        left: -$page-route-width;
+    }
+
+    .page-route__nav--unfold {
+        left: 0;
+    }
+
+    // 暂时不知道想实现nav的折叠，所以先给个固定的margin
+    .page-route__maincontent {
+        margin-left: $page-route-width;
+    }
+}
